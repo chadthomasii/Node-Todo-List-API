@@ -8,10 +8,7 @@ app.get('/', function(request,response)
     response.send("Hi From Express");
 });
 
-app.get('/happy', function(request,response)
-{
-    response.send("Hi From a happy Express");
-});
+
 
 
 
