@@ -1,15 +1,13 @@
 var express = require('express');
-var port = 3000;
-
 app = express();
-
-app.get('/', function(request,response)
-{
-    response.send("Hi From Express");
-});
+var port = 3000;
+var todoRoutes = require('./routes/todos')
 
 
 
+app.use('/api/todos', todoRoutes);
 
 
-app.listen(port)
+
+
+app.listen(port);
