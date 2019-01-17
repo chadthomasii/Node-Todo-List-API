@@ -1,3 +1,4 @@
 mongod
 node_modules
 node_modules/body-parser
+package-lock.json
